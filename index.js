@@ -1,4 +1,4 @@
-import { jsJokes } from "./data";
+import { jsJokes } from "./data.js";
 
 const calendarContainer = document.getElementById('calendar');
 
