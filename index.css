@@ -5,7 +5,7 @@ body {
   background-color: #FDFFFF;
   margin: 2rem;
   background-image: url(https://images.pexels.com/photos/773953/pexels-photo-773953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-position: cover;
+  background-size: auto 100vh;
   text-align: center;
 }
 
