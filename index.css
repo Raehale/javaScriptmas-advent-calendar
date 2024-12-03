@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+body {
+  font-family: "Merienda", cursive;
+  background-color: #FDFFFF;
+  margin: 2rem;
+  background-image: url(https://images.pexels.com/photos/773953/pexels-photo-773953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: cover;
+  text-align: center;
+}
+
+h1 {
+  color: #901B22;
+  position: relative;
+  font-size: 2.25rem;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+}
+
+h1::before {
+  height: 10px;
+  width: 50vw;
+  position: absolute;
+  content: "";
+  background-color: #C2242D;
+  border-radius: 10px;
+  z-index: -1;
+  bottom: -4px;
+  left: 25vw;
+}
+
+h2 {
+  color: #C2242D;
+  font-size: 1.25rem;
+}
+
+h2 > i {
+  color: #778B3B;
+}
+
+.calendar-container {
+  display: flex;
+  padding: 1rem;
+  list-style-type: none;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.calendar-box {
+  background-color: #778B3B;
+  padding: 0.5rem;
+  border: 1px solid #778B3B;
+  color: #FDFFFF;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 0.3fr 1fr;
+  width: 5rem;
+}
+
+.calendar-box:nth-child(even) {
+  background-color: #A3BF50;
+  border-color: #A3BF50;
+}
+
+.calendar-box:last-child {
+  background-color: #901B22;
+  border-color: #901B22;
+}
+
+.calendar-box:hover {
+  border: 1px dashed black;
+  cursor: pointer;
+}
+
+.calendar-box p {
+  margin: 0;
+}
+
+.calendar-box i {
+  font-size: 2rem;
+}
+
+modal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.modal-container {
+  position: relative;
+}
+
+.x-out {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.x-out:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.modal-container > h2 {
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.accordion {
+  background-color: #A3BF50;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 0;
+  border-bottom: 2px solid #778B3B;
+  transition: 0.4s;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
